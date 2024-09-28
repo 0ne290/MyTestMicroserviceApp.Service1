@@ -4,7 +4,7 @@ if [ -n "$1" ]
 then
   echo 'Starting building Docker image. Image name: "service1"'
   fullPath=$(realpath $1)
-  docker build -f Web -t service1 --build-arg SERVICE_DIRECTORY_PATH=$fullPath
+  docker build -f Web -t service1 --build-arg SERVICE_DIRECTORY_PATH=$fullPath Web
 else
   echo 'The output directory path argument is mandatory.'
 fi
