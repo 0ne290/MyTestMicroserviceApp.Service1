@@ -1,7 +1,5 @@
 # If I were publishing the project no-self-contained, I would need to use "FROM mcr.microsoft.com/dotnet/aspnet:8.0"
-# but since I am publishing the project self-contained, I am using the "FROM scratch".
-
-# FROM scratch
+# but since I am publishing the project self-contained, I am using the "FROM mcr.microsoft.com/dotnet/runtime-deps:8.0".
 
 FROM mcr.microsoft.com/dotnet/runtime-deps:8.0
 
